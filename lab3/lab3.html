@@ -34,7 +34,7 @@
     <dd>The dog is a domesticated decendant of the wolf.</dd>
    </dl>
 
-   <h2>Tables</h2>
+   <h2 id="tables">Tables</h2>
    <table border="3">
     <tr>
         <td>Column 1</td>
@@ -53,38 +53,115 @@
     </tr>
     </table>
     
-    <br>
+    <br><br>
     <table>
     <tr bgcolor="lightblue">
         <td></td>
         <th>Saturday</th>
         <th>Suunday</th>
-        <br>
     </tr>
     <tr>
         <th>Tickets Sold</th>
         <td align="center">120</td>
         <td align="center">135</td>
     </tr>
-    <br>
+    <tr>
     <th>Total Sales</th>
     <td align="center">$600</td>
     <td align="center" bgcolor="lightpink">$675</td>
+    </tr>
    </table>
    <br><br>
    <table width="400" height="120" bgcolor="lightgreen" border="1">
-    <tr bgcolor="gray">
-        <th colspan="2"> Dancing Course Free</th>
-    </tr>
+    <thead>
+        <tr bgcolor="lightgray">
+            <th colspan="2"> Dancing Course Free</th>
+        </tr>
+    </thead>
+
+    <tbody>
     <tr>
-    <th rowspan="2">Adult, 18+ years-old</th>
-    <td align="center" rowspan="2">$250</td>
+        <th>Adult, 18+ years-old</th>
+        <td align="center" rowspan="2">$250</td>
     </tr>
     <tr>
         <th>Teen, between 10 and 17 years-old</th>
         <td alighn="center"> $135.55</td>
-        <td>Cash or Credit payment fee</td>
     </tr>
+    </tbody>
+        <Tfoot>
+            <tr>
+                <td colspan="2" align="center">Cash or Credit payment fee </td>
+            </tr>
+        </Tfoot>
+        
    </table>
+   
+   <h2 id="imageslink">Images</h2>
+   <hr>
+   <img src="images/nyc.jpg" alt="image of New York City" width="300px" title="Visit New York City">
+   <img src="images/nyc.jpg" alt="image of New York City" width="300px" title="Visit New York City">
+   <figure>
+    <img src="images/nyc.jpg" alt="image of New York City" width="300px" title="Visit New York City">
+    <img src="images/nyc.jpg" alt="image of New York City" width="300px" title="Visit New York City" alighn="right">
+    <figcaption>I Love New York City -- 2025</figcaption>
+   </figure>
+
+   <h2 id="links">Links</h2>
+   <p>Link to open an external website</p>
+   <p>Visit  <a href="http://https://www.qcc.cuny.edu/" target="_blank" rel="noopener noreferrer">QCC website</a> for more information!</p>
+
+   <p><em>Link to an email address</em></p>
+   <p>Contact Email Professor Wu <a href="mailto:hwu@qcc.cny.edu">by email</a></p>
+
+   <p><em>Link from an image</em></p>
+   <figure>
+    <a href="https://www.nyc.gov/" target="_blank" rel="noopener noreferrer">
+       <img src="images/nyc.jpg" alt="image of New York City" width="300px" title="Visit New York City">
+    </a>
+   </figure>
+   <br>
+   <p>Connect to QCC social media</p>
+   <figure>
+    <a href="http://www.facebook.com/QueensboroughCUNY" target="_blank" rel="noopener noreferrer">
+        <img src="images/facebook_icon.svg" alt="Connect to QCC FaceBook" title="Keep connect to QCC FaceBook" width="50px">
+    </a>
+    
+    <a href="https://www.tiktok.com/@qcc_cuny" target="_blank" rel="noopener noreferrer">
+        <img src="images/tiktok_icon.svg" alt="Connect to QCC TikTok" title="Keep connected to QCC TikTok" width="50px">
+    </a>
+   </figure>
+   <br>
+   <p id="places"><em>Link to an Internal Local Webpage - Link to other pages on the same website</em></p>
+   <p>Places to visit in NYC: </p>
+   <ul>
+    <li><a href="central_park.html">Central Park</a></li>
+    <li><a href="times_square.html">Times Square</a></li>
+   </ul>
+<br>
+<p><em>image mapping</em></p>
+<!-- Target Map-->
+<figure>
+    <img src="images/nyc.jpg" alt="image of New York City" width="500px" height="400px" title="Visit New York City" usemap="#nyc_map">
+    <figcaption>I Love New York City -- 2025</figcaption>
+   </figure>
+   <!--Define map-->
+    <map mame="nyc_map">
+        <area shape="rect" coords="200,150,300,250" href="central_park.html" alt="link to Centra Park Webpage">
+    </map>
+
+    <br><br>
+    <p><em>Link to a specific section of the same webpage.</em></p>
+    <nav>
+        <a href="#">Go to the beginning of webpage.</a>
+        <span>|</span>
+        <a href="#tables">Tables</a>
+        <span>|</span>
+        <a href="#links">Links</a>
+        <span>|</span>
+        <a href="#imageslink">Images</a>
+    </nav>
+
 </body>
+
 </html>
