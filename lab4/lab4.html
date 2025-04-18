@@ -26,7 +26,7 @@
     <p id="intro">CSS (Cascading Style Sheets) allows you to create rules that specify how the content of an element should appear. Only one elelment can be named with an "id". ID is identified by using a hash-tag (#). Justify means to evenly distribute from left to right. The width of the border is set to zero pixels by default.  The border can be set to have specific elements. The border has three properties: the assigned name, width and the color. Add a margin to create a space betwween boxes. A margin is the distance of the outside element. Padding is the distance inside the box.</p>
     <p id="intro"></p>Border radius can be applied to one or all sides of the border. A border radius is rounded corners.
     <p class="author">By:  Paula Rice</p>
-    <h2 class="author">Typology</h2>
+    <h2 class="author" id="typology">Typology</h2>
     <p class="author">Styling text</p>
     <p class="fontweight">Paragraph with font-weight bold</p>
     <p class="fontstyle">Paragraph with font syle.</p>
@@ -61,7 +61,7 @@
 <div class="radiusbox4">Box 4</div>
 <div class="radiusbox5">Box 5</div>
 <hr>
-<h2 class="subtitle">Basic Image Formatting</h2>
+<h2 class="subtitle" id="images">Basic Image Formatting</h2>
     <img class="blossoming blossom1" src="images/Cherryblossoms tree.jpg" alt="image of a cherry blossom tree">
     <img class="blossoming blossom2" src="images/Cherryblossoms tree.jpg" alt="image of a cherry blossom tree">
     <img class="blossoming blossom3" src="images/Cherryblossoms tree.jpg" alt="image of a cherry blossom tree">
@@ -80,6 +80,109 @@
         <figcaption>Blurred filter with 10px</figcaption>
         <br>
     </figure>
+<hr>
+    <figure>
+        <img style="filter: sepia(0%);" src="images/Cherryblossoms tree.jpg"  alt="image of a cherry blossom tree">
+        <figcaption>Sepia filter, width 0%</figcaption>
 
+        <img style="filter: sepia(50%);" src="images/Cherryblossoms tree.jpg"  alt="image of a cherry blossom tree">
+        <figcaption>Sepia filter, width 50%</figcaption>
+
+        <img style="filter: sepia(100%);" src="images/Cherryblossoms tree.jpg"  alt="image of a cherry blossom tree">
+        <figcaption>Sepia filter, width 100%</figcaption>
+    </figure>
+    <hr>
+    <figure>
+        <img style="filter: invert(0%);" src="images/Cherryblossoms tree.jpg"  alt="image of a cherry blossom tree">
+        <figcaption>Invert filter, width 0%</figcaption>
+
+        <img style="filter: invert(40%);" src="images/Cherryblossoms tree.jpg"  alt="image of a cherry blossom tree">
+        <figcaption>Invert filter, width 50%</figcaption>
+
+        <img style="filter: invert(100%);" src="images/Cherryblossoms tree.jpg"  alt="image of a cherry blossom tree">
+        <figcaption>Invert filter, width 100%</figcaption>
+    </figure>
+
+    <!--Important to control the ellement because of the different screens. CSS treats each element as an independent block. Structure in a block elecment is a parent/child.-->
+    <!--Dynamic and Liguid elements can be combined. Best to use Semantics-->
+
+    <h2 class="subtitle">Static and Liquid</h2>
+    <main class="maincontainer">
+        <div class="leftcolumn">
+            <section class="section">Information Section</section>
+            <article class="article">Article Section</article>
+        </div>
+        <aside class="rightcolumn">Aside for Blogs</aside>
+        <section class="images">Images Container</section>
+    </main>
+
+    <h2 is="cards">Cards</h2>
+    <section class="container">
+        <div class="card">
+            <img class="imgcard"src="images/Cherryblossoms tree.jpg" alt="image of cherry blossm tree">
+            <a class="linkcard:" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Gardens</a>
+        </div>
+        <div class="card">
+            <img class="imgcard"src="images/Cherryblossoms tree.jpg" alt="image of cherry blossm tree">
+            <a class="linkcard:" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Gardens</a>
+        </div>
+        <div class="card2">
+            <img class="imgcard"src="images/Cherryblossoms tree.jpg" alt="image of cherry blossm tree">
+            <h2 class="cardtitle">Brooklyn Botanical Garden</h2>
+            <p class="cardinfo">Brooklyn Botanical Gardens occupies 52 acres in Central Park</p>
+            <a class="linkcard2" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Gardens</a>
+        </div>
+    </section>
+
+    <h2 class="subtitle">Navagation Tabs</h2>
+    <ul class="navbar">
+<li><a href="#">Home</a></li>
+<li><a href="#typology">Topology</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#cards">Cards</a></li>
+    </ul>
+
+   
+
+    <h2 class="subtitle">Colors</h2>
+    <h3>RGB Value</h3>
+    <section class="rgbcontainer">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <h3>Hex Code</h3>
+    <section class="hexcontainer">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <h2 class="subtitle">Positions</h2>
+    <div class="imgcontainer">
+        <img src="images/Cherryblossoms tree.jpg" alt="image of cherry blossom tree">
+        <p class="imgtitle">Brooklyn Botanical Garden</p>
+    </div>
+
+    <h2 class="subtitle">Background Images</h2>
+    <section class="imgbackground">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <p>This is linear-gradient with three plus colors.</p>
+    <section class="imgbackground2">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <nav class="navbarhorizontal fixedtabs">
+        <a href="#">Home</a>
+        <a href="#typology">Topology</a>
+        <a href="#images">Images</a>
+        <a href="#cards">Cards</a>
+    </nav>
 </body>
 </html>
