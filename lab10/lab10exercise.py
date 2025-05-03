@@ -1,3 +1,7 @@
+"""
+Paula Rice
+Lab Exercise 10
+"""
 # Define the list of colors
 colors = ['red', 'orange', 'olive', 'magenta', 'green']
 
